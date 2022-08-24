@@ -18,6 +18,7 @@ html {
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 a {
@@ -87,6 +88,7 @@ header {
             display: flex;
             flex-direction: row;
             font-size: calc(2 * var(--var-unit));
+            margin: 0;
         }
 
         header li {
