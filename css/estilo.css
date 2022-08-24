@@ -557,6 +557,16 @@ width: 90%;
 
 /* PANTALLA DE AYUDA */
 
+.sectionRegister {
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(1*var(--var-unit));
+    padding-bottom: calc(3*var(--var-unit));
+    justify-content: center;
+    background-color:var(--main-bg-color--2);
+    width: 800px;
+}
+
 #mensaje {
     width: calc(40*var(--var-unit));
     height: calc(10*var(--var-unit));;
