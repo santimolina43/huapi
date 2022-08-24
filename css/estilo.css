@@ -615,8 +615,8 @@ width: 90%;
     /* HEADER */
 
     #sectionHeader {
-        flex-direction: column;
-        padding-bottom: 1rem;
+        /* flex-direction: column; */
+        /* padding-bottom: 1rem; */
     }
 
     .sectionHeader__Huapi {
