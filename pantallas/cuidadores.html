@@ -81,12 +81,20 @@
     <main class="centerMain">
         <section class="grid_padre_cuidadores">
             <div class="grid_hijo_buscador">
-                <div class="buscador">
+                <nav class="navbar bg-light">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar cuidadores en.." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </nav>
+                <!-- <div class="buscador">
                     <label for="buscar">
                         Buscar cuidadores en:
                     </label>
                     <input type="text"  class="buscar">
-                </div>
+                </div> -->
             </div>
             <div class="grid_hijo_filtros">
                 <div>

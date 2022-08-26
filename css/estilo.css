@@ -87,7 +87,7 @@ header {
         .menu {
             display: flex;
             flex-direction: row;
-            font-size: calc(2 * var(--var-unit));
+            font-size: calc(3 * var(--var-unit));
             margin: 0;
         }
 
