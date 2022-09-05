@@ -1,0 +1,65 @@
+/* PANTALLA DE EXPERIENCIAS CON HUAPI */
+
+.sectionExp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: calc(1*var(--var-unit));
+    padding-bottom: calc(3*var(--var-unit));
+    justify-content: center;
+    background-color:var(--main-bg-color--2);
+    width: 800px;
+}
+
+.tituloExp {
+align-self: flex-start;
+padding: var(--var-unit);
+margin: var(--var-unit);
+max-width: calc(100*var(--var-unit));
+font-size: calc(2*var(--var-unit));
+color: var(--var-font-color);
+}
+
+.sectionExp h1 {
+display: flex;
+align-items: flex-start;
+}
+
+.sombra {
+background-color:         green ;
+align-self: center;
+padding-bottom: calc(0.5*var(--var-unit));
+padding-left: calc(0.5*var(--var-unit));
+border-radius: var(--var-unit);
+margin: var(--var-unit);
+width: 90%;
+}
+
+.reseña {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid calc(0.2*var(--var-unit)) black;
+    border-radius: var(--var-unit);
+    background-color: var(--main-bg-color--3);
+    color: var(--var-font-color);
+    padding-bottom: calc(0.5*var(--var-unit));
+    padding-left: calc(0.5*var(--var-unit));
+    margin: var(--var-unit);
+    width: 90%;
+}
+
+@media screen and (max-width: 820px) {       
+
+    .sectionExp {
+        width: 100%;
+    }
+
+    .card-img-top {
+        width: 10rem;
+        height: 10rem;
+    }
+
+}

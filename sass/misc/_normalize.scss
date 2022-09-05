@@ -1,0 +1,36 @@
+/* NORMALIZE */
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Edu+QLD+Beginner:wght@600&display=swap');
+
+* {
+    font-family: 'Concert One', cursive;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+li {
+    list-style-type: none; /*elimina el puntito de las listas*/
+}

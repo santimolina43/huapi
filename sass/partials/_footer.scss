@@ -1,0 +1,18 @@
+/* FOOTER */
+
+.footer__index {
+    width: 100%;
+    align-content: stretch;
+}
+
+#sectionFooter {
+    background-color: var(--main-bg-color--2);
+    text-align: center;
+    margin: 0;
+    padding: calc(2*var(--var-unit));
+    justify-items: stretch;
+}
+
+    .sectionFooter__p {
+        justify-self: stretch;
+    }
