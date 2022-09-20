@@ -276,7 +276,8 @@ header li {
     min-width: 390px; }
   .main__index .main__index__contenedorUno #seccionUno {
     max-height: 460px;
-    grid-template-rows: repeat(10, 1fr); }
+    grid-template-rows: repeat(10, 1fr);
+    margin-top: 1.5rem; }
     .main__index .main__index__contenedorUno #seccionUno .textoSomos {
       font-size: 2rem; }
     .main__index .main__index__contenedorUno #seccionUno .seccionUno_grid_hijo_uno {
@@ -541,32 +542,3 @@ header li {
       font-size: 1.6rem; }
 
 /* REGISTRARME */
-.sectionRegister {
-  display: flex;
-  flex-direction: column;
-  padding-top: calc(1*var(--var-unit));
-  padding-bottom: calc(3*var(--var-unit));
-  justify-content: center;
-  background-color: var(--main-bg-color--2);
-  width: 800px; }
-
-#mensaje {
-  width: calc(40*var(--var-unit));
-  height: calc(10*var(--var-unit)); }
-
-.form {
-  align-self: flex-start;
-  align-items: left;
-  align-content: left;
-  padding: var(--var-unit);
-  width: calc(40*var(--var-unit)); }
-
-.formDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(30*var(--var-unit));
-  padding: var(--var-unit); }
-
-.labelMsj {
-  padding-right: var(--var-unit); }
