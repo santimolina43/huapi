@@ -19,6 +19,12 @@
             padding-right: var(--var-unit);
         }
     }
+    .navbar {
+        .box {
+            display: none;
+        }
+    }
+    
 }
 
         .menu {
@@ -35,27 +41,27 @@
         }
 
 @media screen and (max-width: 820px) {
-    #sectionHeader {
-        align-items: flex-start;
-
-        .boton_navegador {
-            align-self: center;
-            justify-self: center;
-        }
-
-        .sectionHeader__logo {
-            height: calc(4*var(--var-unit)); 
-
-            .sectionHeader__Huapi {
-                height: 60px;
+        #sectionHeader {
+            align-items: flex-start;
+    
+            .boton_navegador {
+                align-self: center;
+                justify-self: center;
+            }
+    
+            .sectionHeader__logo {
+                height: calc(4*var(--var-unit)); 
+    
+                .sectionHeader__Huapi {
+                    height: 60px;
+                }
+            }
+    
+            .line {
+                display: none;
             }
         }
-
-        .line {
-            display: none;
-        }
-    } 
-}
+    }
 
 @media (max-width:992px) {
     #sectionHeader {
@@ -67,8 +73,49 @@
 
         .menu {
             font-size: 1.5rem;
+            width: fit-content;
+            flex-direction: column;
+        }
+
+        .navbar {
+            flex-direction: row;
+            align-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+
+            .box {
+                display:block;
+                width: 26rem;
+                height: 10rem;
+            }
+
+            .navbar-nav {
+                align-items: flex-end;
+            }
+        }
+
+        .collapse:not(.show) {
+            display: none;
+        }
+        .navbar-collapse {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (max-width: 408px) {
+    #sectionHeader {
+        .navbar {
+            .box {
+                display:none;
+            }
+        }
+
+        .navbar-collapse {
             justify-content: flex-end;
-            align-self: flex-end;
         }
     }
 }
