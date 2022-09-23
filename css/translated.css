@@ -128,16 +128,38 @@ header li {
 .footer__index {
   width: 100%;
   align-content: stretch; }
+  .footer__index #sectionFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color--2);
+    text-align: center;
+    margin: 0;
+    padding: calc(2*var(--var-unit));
+    justify-items: stretch; }
+    .footer__index #sectionFooter .sectionFooter__p {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .footer__index #sectionFooter .sectionFooter__p .footer__logo {
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+        align-items: center;
+        justify-content: center; }
+      .footer__index #sectionFooter .sectionFooter__p .tw {
+        width: 2.6rem;
+        height: 2.6rem; }
+      .footer__index #sectionFooter .sectionFooter__p .footer__links {
+        margin: 1rem; }
+        .footer__index #sectionFooter .sectionFooter__p .footer__links:hover {
+          color: white; }
 
-#sectionFooter {
-  background-color: var(--main-bg-color--2);
-  text-align: center;
-  margin: 0;
-  padding: calc(2*var(--var-unit));
-  justify-items: stretch; }
-
-.sectionFooter__p {
-  justify-self: stretch; }
+@media screen and (max-width: 820px) {
+  .footer__index #sectionFooter .sectionFooter__p .footer__logo {
+    margin: 0.5rem; }
+  .footer__index #sectionFooter .sectionFooter__p .footer__links {
+    margin: 0.5rem; } }
 
 /* VIEWS */
 /************ HOME *************/
@@ -499,7 +521,7 @@ header li {
     grid-row: 2/13; } }
 
 /* PANTALLA DE EXPERIENCIAS CON HUAPI */
-.main__index__contenedorUno .sectionExp {
+.main__index .main__index__contenedorUno .sectionExp {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -508,19 +530,19 @@ header li {
   padding-bottom: calc(3*var(--var-unit));
   background-color: var(--main-bg-color--2);
   width: 800px; }
-  .main__index__contenedorUno .sectionExp .tituloExp {
+  .main__index .main__index__contenedorUno .sectionExp .tituloExp {
     align-self: flex-start;
     padding: var(--var-unit);
     margin: var(--var-unit);
     max-width: calc(100*var(--var-unit));
     font-size: calc(2*var(--var-unit));
     color: var(--var-font-color); }
-    .main__index__contenedorUno .sectionExp .tituloExp h1 {
+    .main__index .main__index__contenedorUno .sectionExp .tituloExp h1 {
       display: flex;
       flex-direction: row;
       justify-content: stretch;
       align-items: center; }
-  .main__index__contenedorUno .sectionExp .reseña {
+  .main__index .main__index__contenedorUno .sectionExp .reseña {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -534,11 +556,18 @@ header li {
     padding-left: calc(0.5*var(--var-unit));
     margin: var(--var-unit);
     width: 90%; }
+    .main__index .main__index__contenedorUno .sectionExp .reseña .resbox {
+      width: 17.5rem;
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
 
 @media screen and (max-width: 820px) {
-  .main__index__contenedorUno .sectionExp {
+  .main__index .main__index__contenedorUno .sectionExp {
     width: 100%; }
-    .main__index__contenedorUno .sectionExp .reseña .card-img-top {
+    .main__index .main__index__contenedorUno .sectionExp .reseña .card-img-top {
       width: 10rem;
       height: 10rem; } }
 

@@ -4,3 +4,8 @@
     justify-content: $jus;
     align-items: $alg;
 }
+
+@mixin sizewh($wid, $hei) {
+    width: $wid;
+    height: $hei;
+}
