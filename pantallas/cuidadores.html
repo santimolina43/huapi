@@ -75,9 +75,138 @@
             </div>
             <div class="grid_hijo_filtros">
                 <div>
-                    <a  class="botonFiltros" href="">Aplicar Filtros
+                    <button class="btn btn-primary botonFiltros" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Aplicar Filtros
                         <img class="simboloFiltro" src="../multimedia/filtros-removebg-preview.png" alt="Error"> 
-                    </a>
+                    </button>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtrar por...</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul>
+                                <div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Mascota
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                  Perro
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                                <label class="form-check-label" for="flexCheckChecked2">
+                                                  Gato
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                                                <label class="form-check-label" for="flexCheckChecked3">
+                                                  Pajaro
+                                                </label>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Cercanía
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                                            <label class="form-check-label" for="flexCheckChecked4">
+                                              Radio de 5km
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                                            <label class="form-check-label" for="flexCheckChecked5">
+                                              Radio de 10km
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                                            <label class="form-check-label" for="flexCheckChecked6">
+                                              Radio de 20km
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Patio
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+                                            <label class="form-check-label" for="flexCheckChecked7">
+                                              Con patio
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+                                            <label class="form-check-label" for="flexCheckChecked8">
+                                              Sin patio
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Edad
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
+                                            <label class="form-check-label" for="flexCheckChecked9">
+                                              Entre 18 y 25 años
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked10">
+                                            <label class="form-check-label" for="flexCheckChecked10">
+                                              Entre 25 y 35 años
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked11">
+                                            <label class="form-check-label" for="flexCheckChecked11">
+                                              Entre 35 y 50 años
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked12">
+                                            <label class="form-check-label" for="flexCheckChecked12">
+                                              Mayor a 50 años
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="listaCuidadores">
                     <div class="cuidador">
