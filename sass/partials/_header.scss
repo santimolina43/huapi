@@ -69,6 +69,10 @@ header {
 
 @media (max-width:992px) {
     header {
+        position: sticky;
+        top: 0;
+        opacity: 1;
+        
         #sectionHeader {
             justify-content: space-around;
     

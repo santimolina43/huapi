@@ -257,12 +257,14 @@ left: 100%;
                             height: calc(6*var(--var-unit));
                             width: 17rem;
                             padding-left: 1rem;
+                            vertical-align: baseline;
                         }
                 
                         .imgAndroid {
                             height: calc(6*var(--var-unit));
                             width: 17rem;
                             padding-right: 1rem;
+                            vertical-align: baseline;
                         }
                     }
                 }
