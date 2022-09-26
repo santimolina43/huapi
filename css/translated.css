@@ -442,6 +442,8 @@ header li {
     font-size: calc(3*var(--var-unit));
     background-color: var(--main-bg-color--2);
     grid-column: 1/5; }
+    .grid_padre_cuidadores .grid_hijo_buscador .navbar {
+      position: initial; }
   .grid_padre_cuidadores .grid_hijo_filtros {
     display: flex;
     flex-direction: column;
@@ -453,6 +455,10 @@ header li {
     padding-bottom: var(--var-unit);
     grid-column: 1/5;
     grid-row: 2/13; }
+    .grid_padre_cuidadores .grid_hijo_filtros .collapse:not(.show) {
+      display: initial; }
+    .grid_padre_cuidadores .grid_hijo_filtros .mostrar__cuidadores {
+      display: none; }
     .grid_padre_cuidadores .grid_hijo_filtros .botonFiltros {
       display: flex;
       flex-direction: row;
@@ -540,24 +546,36 @@ header li {
   .grid_padre_cuidadores .grid_hijo_buscador {
     grid-column: 1/13; }
   .grid_padre_cuidadores .grid_hijo_filtros {
-    grid-column: 1/6;
-    position: absolute;
-    margin-top: 8rem;
-    margin-left: 1rem;
-    border: black solid 1px;
-    border-radius: 3rem;
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
     background-color: var(--main-bg-color--2);
-    max-width: 20rem; }
-    .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .fotoCuidador {
-      max-width: 7rem;
-      max-height: 7rem; }
-    .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .infoCuidador h2 {
-      font-size: 1.3rem; }
-    .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .infoCuidador ul {
+    width: 100%;
+    height: fit-content;
+    min-height: 4rem;
+    align-items: center; }
+    .grid_padre_cuidadores .grid_hijo_filtros .collapse:not(.show) {
       display: none; }
+    .grid_padre_cuidadores .grid_hijo_filtros .mostrar__cuidadores {
+      display: inline;
+      background-color: var(--main-bg-color--2);
+      border: none;
+      margin: 1rem; }
+    .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores {
+      max-height: 13rem; }
+      .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .fotoCuidador {
+        max-width: 7rem;
+        max-height: 7rem; }
+      .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .infoCuidador h2 {
+        font-size: 1.3rem; }
+      .grid_padre_cuidadores .grid_hijo_filtros .listaCuidadores .cuidador .infoCuidador ul {
+        display: none; }
   .grid_padre_cuidadores .grid_hijo_mapa {
     grid-column: 1/13;
-    grid-row: 2/13; } }
+    grid-row: 2/13; }
+  .hide {
+    display: none; } }
 
 /* PANTALLA DE EXPERIENCIAS CON HUAPI */
 .main__index .main__index__contenedorUno .sectionExp {

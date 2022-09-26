@@ -66,15 +66,14 @@
                       </form>
                     </div>
                   </nav>
-                <!-- <div class="buscador">
-                    <label for="buscar">
-                        Buscar cuidadores en:
-                    </label>
-                    <input type="text"  class="buscar">
-                </div> -->
             </div>
             <div class="grid_hijo_filtros">
                 <div>
+                    <button class="mostrar__cuidadores" type="button" data-bs-toggle="collapse" href="#idprueba" role="button" aria-expanded="false" aria-controls="idprueba">
+                        Mas de 100 cuidadores disponibles
+                    </button>
+                </div>
+                <div class="collapse" id="idprueba">
                     <button class="btn btn-primary botonFiltros" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Aplicar Filtros
                         <img class="simboloFiltro" src="../multimedia/filtros-removebg-preview.png" alt="Error"> 
                     </button>
@@ -208,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="listaCuidadores">
+                <div class="listaCuidadores collapse overflow-auto" id="idprueba">
                     <div class="cuidador">
                         <a href="">
                             <img class="fotoCuidador" src="../multimedia/sabrina rojas.jpg" alt="Error al cargar la imagen">
@@ -251,14 +250,8 @@
             </div>
         </section>
     </main>
-
-    <div class="divWsp">
-        <a class="imgWhatsapp" href="https://web.whatsapp.com/" target="_blank">
-            <img class="imgWhatsapp" src="../multimedia/logo-whatsapp.png" alt="Error al cargar imagen">
-        </a> 
-    </div>
     
-    <footer class="footer__index">
+    <footer class="footer__index hide">
         <section id="sectionFooter">
             <div class="sectionFooter__p">
                 <a href="https://www.instagram.com/" target="_blank">
