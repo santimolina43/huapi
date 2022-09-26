@@ -629,14 +629,17 @@ header li {
       height: 10rem; } }
 
 /* PREGUNTAS FRECUENTES */
-.main__index .main__index__contenedorUno .dudas-container {
+.main__index .main__index__contenedorUno .sectionExp .textoExp {
+  font-size: large; }
+
+.main__index .main__index__contenedorUno .sectionExp .dudas-container {
   width: 90%;
   align-self: center; }
-  .main__index .main__index__contenedorUno .dudas-container .accordion-item {
+  .main__index .main__index__contenedorUno .sectionExp .dudas-container .accordion-item {
     border: none;
     border-radius: 2rem;
     background-color: #ABEBC6; }
-    .main__index .main__index__contenedorUno .dudas-container .accordion-item .accordion-header .dudas {
+    .main__index .main__index__contenedorUno .sectionExp .dudas-container .accordion-item .accordion-header .dudas {
       background-color: #ABEBC6;
       align-self: flex-start;
       color: black;
@@ -645,13 +648,13 @@ header li {
       border: solid grey 0.1rem;
       border-radius: 2rem;
       position: initial; }
-    .main__index .main__index__contenedorUno .dudas-container .accordion-item .accordion-header .dudas-uno {
+    .main__index .main__index__contenedorUno .sectionExp .dudas-container .accordion-item .accordion-header .dudas-uno {
       margin-top: 0; }
-    .main__index .main__index__contenedorUno .dudas-container .accordion-item .accordion-collapse .accordion-body ol li {
+    .main__index .main__index__contenedorUno .sectionExp .dudas-container .accordion-item .accordion-collapse .accordion-body ol li {
       list-style-type: decimal;
       margin-left: 6rem;
       font-size: 1.5rem; }
-    .main__index .main__index__contenedorUno .dudas-container .accordion-item .accordion-collapse .rta {
+    .main__index .main__index__contenedorUno .sectionExp .dudas-container .accordion-item .accordion-collapse .rta {
       font-size: 1.6rem; }
 
 /* REGISTRARME */

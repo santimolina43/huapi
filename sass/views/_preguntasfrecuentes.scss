@@ -2,45 +2,52 @@
 
 .main__index {
     .main__index__contenedorUno{
-        .dudas-container {
-            width: 90%;
-            align-self: center;
-    
-            .accordion-item { 
-                border: none; 
-                border-radius: 2rem;
-                background-color: #ABEBC6;
+        .sectionExp {
+            .textoExp {
+                font-size: large;
+            }
 
-                .accordion-header {
-                    .dudas {
-                        background-color: #ABEBC6;
-                        align-self: flex-start;
-                        color: black;
-                        font-size: 1.8rem;
-                        margin-top: 2rem;
-                        border: solid grey 0.1rem;
-                        border-radius: 2rem;
-                        position: initial;
+            .dudas-container {
+                width: 90%;
+                align-self: center;
+        
+                .accordion-item { 
+                    border: none; 
+                    border-radius: 2rem;
+                    background-color: #ABEBC6;
+    
+                    .accordion-header {
+                        .dudas {
+                            background-color: #ABEBC6;
+                            align-self: flex-start;
+                            color: black;
+                            font-size: 1.8rem;
+                            margin-top: 2rem;
+                            border: solid grey 0.1rem;
+                            border-radius: 2rem;
+                            position: initial;
+                        }
+        
+                        .dudas-uno {
+                            margin-top: 0;
+                        }   
                     }
-    
-                    .dudas-uno {
-                        margin-top: 0;
-                    }   
-                }
-    
-                .accordion-collapse {
-                    .accordion-body ol li {
-                        list-style-type: decimal;
-                        margin-left: 6rem;
-                        font-size: 1.5rem;
-                    }
-    
-                    .rta {
-                        font-size: 1.6rem;
+        
+                    .accordion-collapse {
+                        .accordion-body ol li {
+                            list-style-type: decimal;
+                            margin-left: 6rem;
+                            font-size: 1.5rem;
+                        }
+        
+                        .rta {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
         }
+        
     }
 }
 
