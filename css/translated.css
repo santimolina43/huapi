@@ -89,6 +89,34 @@ header #sectionHeader {
             font-size: initial;
             height: fit-content;
             line-height: 1.5; }
+          header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-body .form-floating .error-form {
+            border-color: red; }
+          header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-body .form-floating .errorBox {
+            background-color: #df3c3c;
+            border-radius: 3px;
+            padding: 3px;
+            margin-top: 10px;
+            width: 100%;
+            align-content: center;
+            justify-content: center; }
+            header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-body .form-floating .errorBox p {
+              font-size: small;
+              font-weight: 0.1;
+              color: white;
+              margin: 4px; }
+          header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-body .form-floating .correctBox {
+            background-color: #3ec43e;
+            border-radius: 3px;
+            padding: 3px;
+            margin-top: 10px;
+            width: 100%;
+            align-content: center;
+            justify-content: center; }
+            header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-body .form-floating .correctBox p {
+              font-size: small;
+              font-weight: 0.1;
+              color: #262222;
+              margin: 4px; }
         header #sectionHeader .navbar .menu .navbar-nav .modal .modal-content .modal-footer {
           display: flex;
           flex-direction: column;
@@ -707,3 +735,5 @@ header #sectionHeader {
       font-size: 1.6rem; }
 
 /* REGISTRARME */
+.main__index .main__index__contenedorUno .sectionExp .w-50 .row .error-border {
+  border-color: red; }
