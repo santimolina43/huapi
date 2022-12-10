@@ -31,9 +31,16 @@ function agregarUsuario() {
     // let altaCorrecta = true;
     let errores = 0;
     
-    for (let usuariox of arrayUsuarios) {
-        if (usuariox.email === email) {
-            alert("Ya existe una cuenta registrada con ese email.");
+    for (let i=0; i<localStorage.length; i++) {
+        let clave = localStorage.key(i);
+        if (clave == email) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Ya existe una cuenta registrada con ese email.',
+                showConfirmButton: false,
+                timer: 3000
+              })
             errores = errores + 1;
         }
     }
@@ -100,7 +107,13 @@ function agregarUsuario() {
     if (errores == 0) {
         const nuevoUser = new Usuario (email, nombre, apellido, contraseña, direccion, ciudad, provincia, cp);
         arrayUsuarios.push(nuevoUser);
-        alert("Su usuario ha sido dado de alta exitosamente.");
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Te registraste exitosamente',
+            showConfirmButton: false,
+            timer: 3000
+          })
         register.reset();
         const userJSON = JSON.stringify(nuevoUser);
         localStorage.setItem(nuevoUser.email, userJSON);
