@@ -103,7 +103,6 @@ function agregarUsuario() {
         divCP.className = "form-control";
     }
 
-    console.log(errores);
     if (errores == 0) {
         const nuevoUser = new Usuario (email, nombre, apellido, contraseña, direccion, ciudad, provincia, cp);
         arrayUsuarios.push(nuevoUser);
@@ -119,6 +118,4 @@ function agregarUsuario() {
         localStorage.setItem(nuevoUser.email, userJSON);
 
     }
-    console.log(arrayUsuarios);
-    console.log(errores);
 } 
