@@ -28,6 +28,11 @@ btnBuscador.addEventListener('click', () => {
                                         </div>
                                     `
                     cuidadoresEncontrados.appendChild(div);
+                    geocoder = new google.maps.Geocoder();
+                marker = new google.maps.Marker({
+                    map,
+                  });
+                    geocode({address: usuarioObj.direccion+", "+usuarioObj.ciudad})
                 }
             }
         }, 3000);
@@ -53,20 +58,16 @@ btnBuscador.addEventListener('click', () => {
                                     </div>
                                 `
                 cuidadoresEncontrados.append(div);
+                geocoder = new google.maps.Geocoder();
+                marker = new google.maps.Marker({
+                    map,
+                  });
+                geocode({address: usuario.direccion+", "+usuario.ciudad})
             }
         });
     }); 
 })
 
-
-// function iniciarMapa() {
-//     mapa = new google.maps.Map(document.getElementById('mapa'),{
-//         center:{lat:-34.7623683, lng:-58.2231437},
-//         zoom: 13
-//     });
-// }
-
-// iniciarMapa();
 
 let map;
 let marker;
@@ -76,60 +77,24 @@ let response;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
+    zoom: 12,
     center: { lat: -34.397, lng: 150.644 },
     mapTypeControl: false,
   });
   geocoder = new google.maps.Geocoder();
 
-  const inputText = document.createElement("input");
+  const ciudadBuscada = document.getElementById("ciudadBuscada");
 
-  inputText.type = "text";
-  inputText.placeholder = "Enter a location";
+  const btnBuscador = document.getElementById("btn-buscador");
 
-  const submitButton = document.createElement("input");
-
-  submitButton.type = "button";
-  submitButton.value = "Geocode";
-  submitButton.classList.add("button", "button-primary");
-
-  const clearButton = document.createElement("input");
-
-  clearButton.type = "button";
-  clearButton.value = "Clear";
-  clearButton.classList.add("button", "button-secondary");
-  response = document.createElement("pre");
-  response.id = "response";
-  response.innerText = "";
-  responseDiv = document.createElement("div");
-  responseDiv.id = "response-container";
-  responseDiv.appendChild(response);
-
-  const instructionsElement = document.createElement("p");
-
-  instructionsElement.id = "instructions";
-  instructionsElement.innerHTML =
-    "<strong>Instructions</strong>: Enter an address in the textbox to geocode or click on the map to reverse geocode.";
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(inputText);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(submitButton);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(clearButton);
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(
-    instructionsElement
-  );
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(responseDiv);
   marker = new google.maps.Marker({
     map,
   });
-  map.addListener("click", (e) => {
-    geocode({ location: e.latLng });
-  });
-  submitButton.addEventListener("click", () =>
-    geocode({ address: inputText.value })
+
+  btnBuscador.addEventListener("click", () => {
+    geocode2({ address: ciudadBuscada.value })
+  }
   );
-  clearButton.addEventListener("click", () => {
-    clear();
-  });
-  clear();
 }
 
 function clear() {
@@ -137,21 +102,35 @@ function clear() {
 }
 
 function geocode(request) {
-  clear();
   geocoder
     .geocode(request)
     .then((result) => {
-      const { results } = result;
-
-      map.setCenter(results[0].geometry.location);
-      marker.setPosition(results[0].geometry.location);
-      marker.setMap(map);
-      response.innerText = JSON.stringify(result, null, 2);
-      return results;
+        const { results } = result;
+        addMarker(results[0].geometry.location);
+        return results;
     })
     .catch((e) => {
-      alert("Geocode was not successful for the following reason: " + e);
+        alert("Geocode was not successful for the following reason: " + e);
     });
 }
 
-window.initMap = initMap;
+function geocode2(request) {
+      geocoder
+        .geocode(request)
+        .then((result) => {
+          const { results } = result;
+          map.setCenter(results[0].geometry.location);
+          console.log(results)
+          return results;
+        })
+        .catch((e) => {
+          alert("Geocode was not successful for the following reason: " + e);
+        });
+    }
+
+function addMarker(position) {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+    });
+}

@@ -1,8 +1,8 @@
 [
     {"nombre":"Juan","email":"juanperez@gmail.com","apellido":"Perez","contraseña":"123456","direccion":"Calle falsa 123","ciudad":"Berazategui","provincia":"Buenos Aires","cp":"1890"},
-    {"nombre":"Pedro","email":"pedrito@gmail.com","apellido":"Rodriguez","contraseña":"123456","direccion":"Rivadavia n 380","ciudad":"Moron","provincia":"Buenos Aires","cp":"1880"},
+    {"nombre":"Pedro","email":"pedrito@gmail.com","apellido":"Rodriguez","contraseña":"123456","direccion":"Charcas 2005","ciudad":"Moron","provincia":"Buenos Aires","cp":"1880"},
     {"nombre":"Lucia","email":"luciasolano@gmail.com","apellido":"Solano","contraseña":"123456","direccion":"Mitre 289","ciudad":"Quilmes","provincia":"Buenos Aires","cp":"1888"},
     {"nombre":"Laura","email":"laura_marin@gmail.com","apellido":"Marin","contraseña":"123456","direccion":"Peregrini 8003","ciudad":"Florencio Varela","provincia":"Buenos Aires","cp":"1990"},
-    {"nombre":"Roberto","email":"robert.tejas@gmail.com","apellido":"Tejas","contraseña":"123456","direccion":"Juan B. Justo 29","ciudad":"CABA","provincia":"Buenos Aires","cp":"1800"}
+    {"nombre":"Roberto","email":"robert.tejas@gmail.com","apellido":"Tejas","contraseña":"123456","direccion":"Charcas 1905","ciudad":"Moron","provincia":"Buenos Aires","cp":"1800"}
 ]
 
